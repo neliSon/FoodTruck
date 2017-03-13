@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1BA004FD1E77383700711537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA004FC1E77383700711537 /* main.m */; };
 		1BA005071E7739E700711537 /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA005061E7739E700711537 /* FoodTruck.m */; };
+		1BA0050A1E7742F500711537 /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA005091E7742F500711537 /* Cook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		1BA005041E77396D00711537 /* FoodTruckDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTruckDelegate.h; sourceTree = "<group>"; };
 		1BA005051E7739E700711537 /* FoodTruck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTruck.h; sourceTree = "<group>"; };
 		1BA005061E7739E700711537 /* FoodTruck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTruck.m; sourceTree = "<group>"; };
+		1BA005081E7742F500711537 /* Cook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
+		1BA005091E7742F500711537 /* Cook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				1BA004FC1E77383700711537 /* main.m */,
+				1BA005041E77396D00711537 /* FoodTruckDelegate.h */,
 				1BA005051E7739E700711537 /* FoodTruck.h */,
 				1BA005061E7739E700711537 /* FoodTruck.m */,
-				1BA005041E77396D00711537 /* FoodTruckDelegate.h */,
+				1BA005081E7742F500711537 /* Cook.h */,
+				1BA005091E7742F500711537 /* Cook.m */,
 			);
 			path = FoodTruck;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			files = (
 				1BA004FD1E77383700711537 /* main.m in Sources */,
 				1BA005071E7739E700711537 /* FoodTruck.m in Sources */,
+				1BA0050A1E7742F500711537 /* Cook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

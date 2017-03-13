@@ -10,7 +10,7 @@
 
 @implementation FoodTruck
 
-- (instancetype)initWithName:(NSString *)name andFoodType:(NSString *)foodType
+-(instancetype)initWithName:(NSString *)name andFoodType:(NSString *)foodType
 {
     self = [super init];
     if (self) {
@@ -22,7 +22,7 @@
 
 -(void)serve:(int)orders {
     /*
-     STEP 3: FROM YOUR DELEGATOR, SEND MESSAGES TO YOUR DELEGATE.
+     STEP C: FROM YOUR DELEGATOR, SEND MESSAGES TO YOUR DELEGATE.
      */
     double price = [self.delegate foodTruck:self priceForFood:self.foodType];
     
@@ -34,7 +34,7 @@
 }
 
 -(void)cashOut {
-    NSLog(@"%@ earned $0.2f today!", self.name, self.earnings);
+    NSLog(@"%@ earned $%0.2f today!", self.name, self.earnings);
 }
 
 @end

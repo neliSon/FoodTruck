@@ -12,13 +12,15 @@
 @interface FoodTruck : NSObject
 
 /*
- STEP 2: ADD A DELEGATE PROPERTY TO YOUR DELEGATOR.
+ STEP B: ADD A DELEGATE PROPERTY TO YOUR DELEGATOR.
  */
 @property (nonatomic, weak) id<FoodTruckDelegate> delegate;
 
 @property (nonatomic, assign) float earnings;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *foodType;
+
+-(instancetype)initWithName:(NSString *)name andFoodType:(NSString *)foodType;
 
 -(void)serve:(int)orders;
 -(void)cashOut;

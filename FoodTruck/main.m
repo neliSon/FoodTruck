@@ -7,11 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FoodTruck.h"
+#import "Cook.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        FoodTruck *truckA = [[FoodTruck alloc] initWithName:@"Take a Bao" andFoodType:@"bao"];
+        
+        FoodTruck *truckB = [[FoodTruck alloc] initWithName:@"Tim Shortons" andFoodType:@"shortbread"];
+        
+        // create instances of your delegate class
+        
+        Cook *cookA = [[Cook alloc] init];
+        
+        Cook *cookB = [[Cook alloc] init];
+        
+        /*
+         STEP F: CONNECT YOUR DELEGATOR AND DELEGATE TOGETHER.
+         */
+        // set truckA and truckB's delegate to your new instance.
+        truckA.delegate = cookA;
+        truckB.delegate = cookB;
+        
+        [truckA serve:10];
+        [truckB serve:5];
+        
+        [truckA cashOut];
+        [truckB cashOut];
     }
     return 0;
 }
